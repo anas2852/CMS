@@ -44,7 +44,6 @@ public class login extends javax.swing.JFrame {
         login = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         create = new javax.swing.JButton();
-        tlogin = new javax.swing.JButton();
 
         jLabel4.setText("jLabel4");
 
@@ -118,16 +117,6 @@ public class login extends javax.swing.JFrame {
             }
         });
 
-        tlogin.setBackground(new java.awt.Color(0, 51, 204));
-        tlogin.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        tlogin.setForeground(new java.awt.Color(255, 255, 255));
-        tlogin.setText("Tlogin");
-        tlogin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tloginActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -150,10 +139,8 @@ public class login extends javax.swing.JFrame {
                         .addComponent(create, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(194, 194, 194)
-                        .addComponent(login, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(tlogin, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(118, Short.MAX_VALUE))
+                        .addComponent(login, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(195, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -169,9 +156,7 @@ public class login extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pass, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(53, 53, 53)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(login, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tlogin, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(login, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -245,7 +230,7 @@ public class login extends javax.swing.JFrame {
     private void createActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createActionPerformed
         // TODO add your handling code here:
       
-        String[] options = {"Teacher", "Student","Admin"};
+        String[] options = {"Teacher", "Student"};
 
     int choice = JOptionPane.showOptionDialog(
             this,
@@ -273,13 +258,8 @@ public class login extends javax.swing.JFrame {
     }
 
     
-        else if (choice == 2) {
-        // Student selected
-        JOptionPane.showMessageDialog(this, "Admin Selected");
-        cadmin c=new cadmin();
-        c.setVisible(true);
-        dispose();
-    }
+   
+   
     }//GEN-LAST:event_createActionPerformed
 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
@@ -327,13 +307,6 @@ public class login extends javax.swing.JFrame {
         
     }//GEN-LAST:event_loginActionPerformed
 
-    private void tloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tloginActionPerformed
-        // TODO add your handling code here:
-        thome th=new thome();
-        th.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_tloginActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -374,6 +347,5 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JButton login;
     private javax.swing.JPasswordField pass;
-    private javax.swing.JButton tlogin;
     // End of variables declaration//GEN-END:variables
 }
